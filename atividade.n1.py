@@ -69,4 +69,25 @@ while venceu == 0:
 				print("Opção inválida!")
 				print("")
 			break;
+		while casa == 5 and movimentos <7:
+			print("Você esta na casa: ",casa)
+			print("Você ainda tem", 7-movimentos,"movimentos")
+			print("Escolha seu caminho:")
+			print("[1]- Caminho vermelho")
+			print("[2]- Caminho preto")
+			jogada = int(input(""))
+			print("")
+			if jogada == 1:
+				casa = 6
+				movimentos = movimentos+1
+				break;
+			elif jogada == 2:
+				casa = 7
+				movimentos = movimentos+1
+				break;
+			else:
+				print("Opção inválida!")
+				print("")
+			break;
+
 			
